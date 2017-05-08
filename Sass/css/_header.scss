@@ -1,0 +1,21 @@
+//Nesting
+.site-header nav {
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        @extend .group;
+    }
+    li {
+        list-style: none;
+        float: left;
+        margin-right: 10px;
+    }
+    a {
+        display: block;
+        padding: 10px;
+        background-color: $primaryColor;
+        color: #fff;
+        text-decoration: none;
+    }
+}

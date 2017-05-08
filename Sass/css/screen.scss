@@ -1,0 +1,88 @@
+//Adding a variable
+$primaryColor: #ec7705;
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    color: $primaryColor;
+}
+
+
+//Import
+@import: '_header';
+
+//Clear Float
+
+.group:before,
+.group:after {
+    content:"";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+//Sass Inheritance @extend
+.btn-a {
+    display: inline-block;
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid $primaryColor;
+    border-radius: 7px;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-b {
+    @extend .btn-a;
+    background-color: lighten($primaryColor, 45%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
